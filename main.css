@@ -1,0 +1,126 @@
+ 
+  body{
+    background-color: #e4f66c; 
+    font-family:Helvetica;
+  }
+ 
+ .container{
+  background-color: rgb(255, 145, 229);
+  height: 70px;
+  padding: 5px;
+  margin: 14px;
+ }
+
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 20px;
+  gap: 0;
+}
+
+.logo {
+  display: flex; 
+  text-decoration: rgb(180, 82, 133) wavy underline;          
+  align-items: center;         
+  font-size: 24px;
+  font-weight: bold;
+  color: #fbfbfb;
+  margin: 3px;                   
+}
+
+.logo-icon {
+  height: 30px;                
+  width: auto;                 
+}
+
+ .nav-item {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.4s ease;
+  position: left;
+  background: none;
+}
+
+.nav-item:hover {
+  background: linear-gradient(to left, #fc14c6, #f67810);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ .nav-links {
+  display: flex;
+  gap: 20px; 
+ }
+
+
+.hero{
+  margin-top: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 5rem;
+  color: #f491d8;
+  margin-bottom: 10px;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  color: #d41491;
+}
+
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+
+.polaroid {
+  background: rgb(240, 159, 197);
+  padding: 10px 10px 10px;  /* 👈 smaller white frame */
+  box-shadow: 0 10px 20px rgba(84, 79, 79, 0.2);
+  border: 3px dotted #550736;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 240px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.polaroid-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Handwritten caption */
+.caption {
+  font-family:Helvetica, sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #cd3579;
+}
+.polaroid.left {
+  transform: rotate(-5deg) translateX(-40px);
+  z-index: 0;
+}
+
+.polaroid.center {
+  transform: scale(1.05);
+  z-index: 2; /* brings it above the other two */
+}
+
+.polaroid.right {
+  transform: rotate(5deg) translateX(40px);
+  z-index: 0;
+}
